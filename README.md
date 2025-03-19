@@ -27,9 +27,9 @@ Outputs the predicted seismic metrics such as Peak Ground Acceleration (PGA), Pe
 The paper presents an updated version of the TISER-GCN model, employing a masked graph convolutional network (Masked GCN) to predict seismic intensities based on 10-second seismic waveforms, without prior knowledge of earthquake specifics. The model was tested using the INSTANCE dataset, covering 600 seismic stations across Italy. The method shows promising results in predicting ground motions, maintaining error variance comparable to established models and reducing bias through the integration of additional data.
 
 ## Repository Content
-- **Data:** Link to the INSTANCE dataset used for training and testing the model.
-- **Code:** Python scripts and Jupyter notebooks for training the Masked GCN model, evaluating its performance, and generating predictions.
-- **Models:** Pre-trained models and their configuration files.
+- **Data:** [INSTANCE](https://www.pi.ingv.it/banche-dati/instance/) dataset used for training and testing the model.
+- **Code:** Python scripts for training the Masked GCN model, evaluating its performance, and generating predictions.
+- **Models:** Model configuration files.
 - **Documentation:** Detailed explanation of the model architecture, training process, and evaluation metrics.
 
 ## How to Use
@@ -38,7 +38,7 @@ The paper presents an updated version of the TISER-GCN model, employing a masked
    - Install required libraries: `pip install -r requirements.txt`
 
 2. **Download and Prepare Data**
-   - Follow the instructions in the data folder to download and preprocess the INSTANCE dataset.
+   - Follow the instructions in the data section to download and preprocess the [INSTANCE](https://www.pi.ingv.it/banche-dati/instance/) dataset.
 
 3. **Training the Model**
    - Run `python train_model.py` to train the model. Modify the script to tweak model parameters or training settings.
